@@ -14,7 +14,7 @@ options      = {
 }
 wiki_options = {
   :live_preview  => false,
-  :allow_uploads => false,
+  :allow_uploads => true,
   :allow_editing => true,
 }
 

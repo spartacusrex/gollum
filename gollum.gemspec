@@ -4,10 +4,10 @@ Gem::Specification.new do |s|
   s.rubygems_version = '1.3.5'
   s.required_ruby_version = '>= 1.9'
 
-  s.name              = 'gollum'
-  s.version           = '4.0.1'
+  s.name              = 'rcu_gollum'
+  s.version           = '4.0.2'
   s.date              = '2015-09-20'
-  s.rubyforge_project = 'gollum'
+  s.rubyforge_project = 'rcu_gollum'
   s.license           = 'MIT'
 
   s.summary     = 'A simple, Git-powered wiki.'
@@ -19,7 +19,7 @@ Gem::Specification.new do |s|
 
   s.require_paths = %w[lib]
 
-  s.executables = ['gollum']
+  s.executables = ['rcu_gollum']
 
   s.rdoc_options = ['--charset=UTF-8']
   s.extra_rdoc_files = %w[README.md LICENSE]
