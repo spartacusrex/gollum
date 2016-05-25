@@ -17,6 +17,7 @@ wiki_options = {
   :allow_uploads => true,
   :allow_editing => true,
   :per_page_uploads => true,
+  :same_directory_uploads => true,
 }
 
 opts = OptionParser.new do |opts|
@@ -114,6 +115,9 @@ MSG
     "If set to 'page', Gollum will store each upload at the currently edited page.") do |mode|
     wiki_options[:allow_uploads]    = true
     wiki_options[:per_page_uploads] = true if mode == :page
+  end
+  opts.on("--same-directory-uploads", "Uploads are stored in the same directory as the page, instead of creating a subdirectory named for the page title.") do
+    wiki_options[:same_directory_uploads] = true
   end
   opts.on("--mathjax", "Enable MathJax (renders mathematical equations).",
     "By default, uses the 'TeX-AMS-MML_HTMLorMML' config with the 'autoload-all' extension.") do

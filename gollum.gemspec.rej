@@ -1,0 +1,10 @@
+diff a/gollum.gemspec b/gollum.gemspec	(rejected hunks)
+@@ -19,7 +19,7 @@
+ 
+   s.require_paths = %w[lib]
+ 
+-  s.executables = ['gollum']
++  s.executables = ['rcu_gollum']
+ 
+   s.rdoc_options = ['--charset=UTF-8']
+   s.extra_rdoc_files = %w[README.md LICENSE]

@@ -549,10 +549,18 @@ module Precious
     end
 
     def find_upload_dest(path)
-      settings.wiki_options[:allow_uploads] ?
-          (settings.wiki_options[:per_page_uploads] ?
-              "#{path}/#{@name}".sub(/^\/\//, '') : 'uploads'
-          ) : ''
+
+      if !settings.wiki_options[:allow_uploads] then
+          ''
+        if !settings.wiki_options[:per_page_uploads] then
+            'uploads'     
+          if !settings.wiki_options[:same_directory_uploads] then 
+              "#{path}/#{@name}".sub(/^\/\//, '')
+          else           
+              "#{path}".sub(/^\/\//, '')
+          end
+        end
+      end 
     end
   end
 end
