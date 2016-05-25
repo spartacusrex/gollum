@@ -4,10 +4,10 @@ Gem::Specification.new do |s|
   s.rubygems_version = '1.3.5'
   s.required_ruby_version = '>= 1.9'
 
-  s.name              = 'rcu_gollum'
-  s.version           = '4.0.2'
+  s.name              = 'gollum'
+  s.version           = '4.0.1'
   s.date              = '2015-09-20'
-  s.rubyforge_project = 'rcu_gollum'
+  s.rubyforge_project = 'gollum'
   s.license           = 'MIT'
 
   s.summary     = 'A simple, Git-powered wiki.'
