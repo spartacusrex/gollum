@@ -16,6 +16,7 @@ wiki_options = {
   :live_preview  => false,
   :allow_uploads => true,
   :allow_editing => true,
+  :per_page_uploads => true,
 }
 
 opts = OptionParser.new do |opts|
